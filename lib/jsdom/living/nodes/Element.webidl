@@ -43,6 +43,9 @@ interface Element : Node {
 
   [CEReactions] Element? insertAdjacentElement(DOMString where, Element element); // historical
   void insertAdjacentText(DOMString where, DOMString data); // historical
+
+  // https://drafts.csswg.org/css-pseudo-4/#window-interface
+  CSSPseudoElement? pseudo(CSSOMString type);
 };
 
 dictionary ShadowRootInit {
